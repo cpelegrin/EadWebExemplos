@@ -1,0 +1,14 @@
+a {
+	text-decoration: none;
+	color: white;
+	margin: 8px;
+}
+
+nav {
+	background-color: grey; 
+	padding: 16px;
+}
+
+.corpo {
+	background-color: green; 
+}
