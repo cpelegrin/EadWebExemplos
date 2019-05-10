@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Inserir Pessoa</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-	<nav>
-		<a href="index.html">Home</a>
-		<a href="insert.html">Inserir</a>
-		<a href="read.html">Consultar</a>
-	</nav>
+<?php 
+$titulo = "Inserir Pessoas";
+
+require_once "utils/header.php";
+
+?>
 	<div class="corpo">
 		<h1>Cadastro de Pessoas</h1>
 		<br>
@@ -25,5 +18,5 @@
 			<input type="submit" value="Salvar Cadastro">
 		</form>
 	</div>
-</body>
-</html>
+
+<?php require_once "utils/footer.php" ?>
