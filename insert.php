@@ -1,5 +1,6 @@
 <?php 
 $titulo = "Inserir Pessoas";
+$tituloPagina = "Cadastro de Pessoas";
 
 require_once "utils/header.php";
 
@@ -7,20 +8,33 @@ require_once "utils/header.php";
 <script type="text/javascript" src="js/validation.js"></script>
 
 	<div class="corpo">
-		<h1>Cadastro de Pessoas</h1>
-		<br>
-		<br>
 		<form action="actionpage.php" method="POST">
-			<label>Nome:</label>
-			<input type="text" name="nome" onblur="validation_name(this)">
-			<label>Idade:</label>
-			<input type="number" name="idade">
-			<label>Email:</label>
-			<input type="email" required="true" name="email">
-			<input type="submit" value="Salvar Cadastro">
-		</form>
 
-		<p id="msg_erro"></p>
+			<div class="input-group flex-nowrap">
+				<div class="input-group-prepend">
+					<span class="input-group-text" id="addon-wrapping">Nome</span>
+				</div>
+				<input name="nome" type="text" class="form-control" placeholder="Nome completo" aria-label="Nome" aria-describedby="addon-wrapping" onblur="validation_name(this)">
+			</div>
+			<br>
+			<div class="input-group flex-nowrap">
+				<div class="input-group-prepend">
+					<span class="input-group-text" id="addon-wrapping">Idade</span>
+				</div>
+				<input name="Idade" type="number" class="form-control" placeholder="Digite sua idade" aria-label="Idade" aria-describedby="addon-wrapping">
+			</div>
+			<br>
+			<div class="input-group flex-nowrap">
+				<div class="input-group-prepend">
+					<span class="input-group-text" id="addon-wrapping">Email</span>
+				</div>
+				<input required="true" name="Email" type="email" class="form-control" placeholder="Digite seu email" aria-label="Email" aria-describedby="addon-wrapping" onblur="validation_name(this)">
+			</div>
+			<br>
+			<button type="submit" class="btn btn-success">Salvar Cadastro</button>
+		</form>
+		
+		<div id="msg_erro" class="alert alert-danger" role="alert"></div>
 	</div>
 
 <?php require_once "utils/footer.php" ?>

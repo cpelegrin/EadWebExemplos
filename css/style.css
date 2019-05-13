@@ -9,11 +9,7 @@ nav {
 	padding: 16px;
 }
 
-.corpo {
-	background-color: green; 
-}
-
-#msg_erro{
+.msg_erro{
 	background-color: red; 
 	color: white; 
 	font-weight: bold; 
